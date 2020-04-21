@@ -1,0 +1,43 @@
+.App {
+  text-align: center;
+}
+.add-todo h2 {
+  font-weight: 400;
+  margin: 0;
+  color: #838383;
+}
+.add-todo input {
+  padding: 5px 10px;
+  border: 2px solid #cbcbcb;
+  width: 200px;
+  background: aliceblue;
+}
+.add-todo-add {
+  height: 31px;
+  width: 50px;
+  font-size: 16px;
+  color: #626262;
+  background: #cbcbcb;
+  border: 0;
+}
+.todo-list {
+  margin-top: 50px;
+}
+
+.change-todo-input {
+  border: 0;
+  font-size: 14px;
+  margin: 5px;
+  background: transparent;
+}
+
+.todo-item {
+  width: 320px;
+  margin: 0 auto 5px;
+  padding: 5px;
+  background: #d5e8ec;
+  border-radius: 5px;
+}
+input:focus {
+  outline: 0;
+}
