@@ -8,10 +8,11 @@ import {selectAllNotes} from './selectors';
 function App() {
   const todos = useSelector(selectAllNotes);
   const dispatch = useDispatch();
-  const [todo, setTodo] = useState('First todo');
+  const [todo, setTodo] = useState('');
 
   const addTodo = (text) => {
-    dispatch(createAction({text}));
+    const id = Date.now();
+    dispatch(createAction({text, id}));
     setTodo('')
   }
 
@@ -31,7 +32,7 @@ function App() {
       </div>
       <div className="todo-list">
         {
-          todos.map((item, index) => {
+          todos && todos.map((item, index) => {
             return (
               <div className="todo-item" key={item.id}>
                 <span>{index+1}</span>

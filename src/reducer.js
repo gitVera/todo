@@ -13,8 +13,8 @@ export default (state = initialState, action) => {
           ...state,
           notelist: [
               ...state.notelist,
-              {   id: state.notelist[state.notelist.length-1].id + 1,
-                  ...action.payload
+              {
+                ...action.payload
               }
             ] 
       }
